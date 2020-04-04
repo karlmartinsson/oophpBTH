@@ -1,0 +1,47 @@
+
+
+@borderSizeH1: 0px;
+@borderSizeH2: 0px;
+@borderSizeH3: 0px;
+@borderSizeH4: 0px;
+@borderSizeH5: 0px;
+@borderSizeH6: 0px;
+
+
+
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    color: @colorBody;
+}
+
+#desinax-hgrid.activateDefaultTypography();
+
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    color: @headerColor;
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+h2 {
+    letter-spacing: 0;
+}
+
+h3 {
+    letter-spacing: 0;
+}
+
+h4 {
+    letter-spacing: 0;
+}

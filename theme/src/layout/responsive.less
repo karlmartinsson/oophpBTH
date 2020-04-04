@@ -1,0 +1,47 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 650px) {
+    .article .figure {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .article .figure img {
+        width: 100%;
+    }
+    .footer-column-wrapper {
+        display: block;
+    }
+    .footer-column {
+        display: block;
+        width: calc(100% - 2rem);
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .region-header-col-2 {
+        display: none;
+    }
+    .wrap-sidebar {
+        display: block;
+        width: calc(100% - 2rem);
+        border-left: solid 2px;
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    .region-main.has-sidebar {
+        display: block;
+    }
+
+
+    .inner-wrap-main .row {
+        display: block;
+    }
+}

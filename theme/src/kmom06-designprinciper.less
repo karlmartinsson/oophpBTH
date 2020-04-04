@@ -1,0 +1,119 @@
+/*!
+ * LESS version of the stylesheet for design kmom06-designprinciper.
+ */
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "normalize.css/normalize.less";
+
+//@import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+@import "@desinax/responsive-menu/less/style.less";
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "layout/colors.less";
+@import "base/base04.less";
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+@import "layout/hgrid04.less";
+@import "layout/vgrid06_princip.less";
+@import "layout/figure.less";
+
+
+//@import "layout/layout03.less";
+
+@import "layout/responsive06_princip.less";
+
+
+// .region-flash {
+//     display: none;
+// }
+
+.region-flash {
+
+    position: relative;
+    line-height: 0;
+
+    img {
+        //-webkit-filter: grayscale(100%);
+        //filter: grayscale(100%) brightness(50%);
+        opacity: 0.5;
+    }
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(800px);
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+    //background-image: linear-gradient(to right, #fff, lightGray);
+}
+
+.inner-wrap-flash {
+    #desinax-vgrid.grid(100%);
+}
+
+.outer-wrap-flash {
+    padding: 0;
+}
+
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.rm-desktop {
+    ul {
+        background-color: @bgColorBody;
+    }
+}
+
+.wrap-sidebar {
+    .selected {
+        font-weight: bold;
+    }
+}
+
+.inner-wrap-footer {
+    padding-top: calc(@magicNumber);
+}
+
+.outer-wrap-main {
+    padding-top: calc(@magicNumber);
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text {
+    color: @accentColor;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}

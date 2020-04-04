@@ -1,0 +1,244 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+
+.inner-wrap-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.site-logo-text-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #333;
+}
+
+
+.region-footer {
+    background-color: #333;
+    overflow: auto;
+}
+
+.footer-column-wrapper  {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.footer-column {
+    padding: 1rem;
+}
+
+
+.footer-column-x {
+    display: inline-block;
+    color: white;
+}
+
+.footer-column h4 {
+    margin-top: 0;
+    color: white;
+}
+
+.footer-column p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.site-footer p {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+
+.region-flash {
+    text-align: center;
+}
+
+.region-header {
+    height: 55px;
+    display: flex;
+    overflow: visible;
+}
+
+.region-header-col-1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    overflow: visible;
+}
+
+.region-header-col-2 {
+    height: 100%;
+    display: inline;
+    float: left;
+    width: calc(100% - 270px);;
+}
+
+/*navbar*/
+
+.rm-navbar {
+    height: 100%;
+}
+.my-navbar {
+    overflow: visible;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+        height: 100%;
+        text-decoration: none;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+}
+
+
+
+.rm-button i {
+    font-size: 1.5em;
+}
+
+.outer-wrap-main {
+    overflow: auto;
+}
+
+
+
+.breadcrumb-list {
+    ul {
+        text-align: right;
+        margin: 0 1rem 1rem 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        font-size: 1em;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+.breadcrumb-list li::after,
+.bullet-list li::after {
+    content: " » ";
+}
+
+.next-previous {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-wrap-main .row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrap-sidebar {
+    border-left: solid 2px;
+    flex: 0 0 230px;
+    border-color: @accentColor;
+    color: @accentColor;
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2.5rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    h4 {
+        margin-top: 0;
+        border-radius: 5px;
+    }
+
+    p {
+        line-height: 1.2em;
+        font-size: 1em;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    .block {
+      margin-bottom: 0;
+      margin-bottom: 1.5em;
+    }
+    .block:last-child {
+      margin-bottom: 0;
+    }
+    .block a {
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+.region-main.has-sidebar {
+    flex-grow: 1
+}
+
+.article .figure {
+    width: 200px;
+    float: right;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+.figure figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.author-byline {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: block;
+    width: calc(100% - 2rem);
+    overflow: auto;
+    margin-bottom: 2rem;
+    margin-right: 0;
+
+    p {
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    .figure {
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+}
