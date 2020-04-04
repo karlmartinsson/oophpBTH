@@ -16,16 +16,13 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Om oophp-kursen
 =========================
 
-Om designkursen
-=========================
+I den här kursen ska vi lära oss mer om objektorienterade programmeringstekniker i programmeringsspråket PHP. 
+
+Vi ska också hantera "klassiska objektorienterade konstruktioner tillsammans med objektorienterad programmering i webbaserat ramverk tillsammans med databaser samt enhetstestning." 
+
+Ramverket som beskrivs heter Anax och är skrivet av vår lärare Mikael.
 
 [FIGURE src=image/coding.jpg?w=300 caption="Lite kod."]
-
-Den här sidan hör till kursen Design på Blekinge tekniska högskola.
-
-Här ska vi fördjupa oss i css och hur man bygger upp en webbsida på ett snyggt sätt.
-
-Till vår hjälp har vi ramverket Anax.
