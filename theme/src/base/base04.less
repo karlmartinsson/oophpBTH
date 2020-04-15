@@ -67,3 +67,103 @@ a {
     color: @linkColor;
     text-decoration: none;
 }
+
+
+
+form {
+    line-height: 1em;
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+form p {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form textarea,
+form select {
+    font-family: "Open sans", sans-serif;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 150px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: white;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 20px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"],
+form input[type="date"]:focus,
+form input[type="datetime"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="time"]:focus,
+form input[type="url"]:focus,
+form textarea:focus,
+form select:focus {
+    background: white;
+}
+
+form select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+form input[type="submit"],
+form input[type="button"],
+button,
+.button {
+    -webkit-appearance: none;
+    text-decoration: none;
+    line-height: 1em;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 8px 10px;
+    color: #fff;
+    margin: 0 auto;
+    background: #ee492e;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border: 0 none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.button.hidden {
+    pointer-events: none;
+    background: lightgrey;
+}

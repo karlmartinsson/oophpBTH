@@ -1,0 +1,586 @@
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f9f8f2;
+    line-height: 1.4;
+}
+
+
+.content {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 15px;
+}
+
+h1 {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 0;
+    font-size: 1.6em;
+    margin-top: 2em;
+}
+
+h3 {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 0;
+    font-size: 1.1em;
+    margin-top: 2em;
+}
+
+
+
+p,
+ul {
+    color: #333;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+    margin: 0 0 28px;
+}
+
+p {
+    line-height: 2em;
+    margin: 0 0 28px;
+}
+
+ul {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    line-height: 2em;
+}
+
+a {
+    color: #ee492e;
+    font-family: "Crimson Text", serif;
+    text-decoration: underline;
+}
+
+img {
+    width: 400px;
+}
+
+.mainimg {
+    width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+    img {
+        width: 100%;
+    }
+}
+
+.image-box {
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.image-box img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 560px) {
+    .image-box img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.imagetext,
+.gps {
+    color: Gray;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1em;
+}
+
+.gps {
+    font-size: 0.8em;
+}
+
+.byline {
+    display: block;
+    color: #333;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    letter-spacing: 0;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.next-link-box a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+blockquote {
+    background: #fff;
+    border-left: 2px solid #ee492e;
+    margin: 1.5em 10px;
+    padding: 1.5em;
+    quotes: "”""”";
+}
+
+blockquote::before {
+    color: #ee492e;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+    font-family: 'Open Sans';
+    font-size: 1em;
+    line-height: 2em;
+}
+
+
+
+.cards {
+    margin-top: inherit;
+    line-height: 0;
+}
+
+.thumbnail {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: white;
+    margin-bottom: 2em;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    padding: 0;
+}
+
+.card a {
+    text-decoration: none;
+    border: 0;
+    overflow: auto;
+    line-height: 0;
+}
+
+.image-link {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.card-content {
+    padding: 1.4em;
+}
+
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.card-content p {
+    font-size: 95%;
+}
+
+.card-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.biggalleryimage {
+    width: 100%;
+}
+
+/* Some styles for the images on the gallery page */
+
+.gallery-image-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-image {
+    margin: 0;
+    width: 100%;
+}
+
+.closing-button {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    background-color: transparent;
+    line-height: 0;
+    top: 10px;
+    right: 5px;
+    margin: 0;
+    padding: 3px;
+    font-size: 50px;
+    color: #ee492e;
+}
+
+/* Flexbox styles */
+@media screen and (min-width: 400px) {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: inherit;
+    }
+
+    .card {
+        margin-bottom: 2em;
+        display: flex;
+        flex: 0 1 calc(50% - 0.5em);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .cards {
+        margin-top: inherit;
+    }
+
+    .card {
+        margin-bottom: 2em;
+        display: flex;
+        flex: 0 1 calc(33% - 0.5em);
+    }
+}
+
+.list-image {
+    float: right;
+    width: 100px;
+    line-height: 0;
+    margin-left: 10px;
+}
+
+.article-list {
+    display: block;
+    overflow: auto;
+}
+
+.article-list::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.article-list h3 {
+    margin-top: 5px;
+}
+
+.list-preview {
+    color: Gray;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1em;
+}
+
+.list-link {
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: lightGray;
+}
+
+.site-header {
+    background-color: #333;
+    overflow: hidden; /* clear fix to make div span all elements */
+}
+
+
+.site-title {
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 0;
+    padding-top: 5px;
+    overflow: auto;
+    margin-right: 50px;
+    z-index: 2000;
+}
+
+.site-title a {
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #ee492e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar .selected {
+    color: #00805e;
+}
+
+.navbar a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
+    padding: 0 10px 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .site-title {
+        margin-right: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        height: 100%;
+        text-decoration: none;
+        padding: 5px 0 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar a {
+        font-size: 0.8em;
+    }
+}
+
+
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+}
+
+.footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
+    margin-left: 15px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footertext {
+    display: block;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .footer a,
+    .footertext {
+        font-size: 0.8em;
+    }
+}
+
+
+table {
+    margin: 20px 0;
+    width: 100%;
+}
+
+td a {
+    background-color: inherit;
+    text-decoration: underline;
+    color: red;
+    font-style: normal;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px;
+    text-align: left;
+}
+
+th {
+    background-color: lightSalmon;
+    color: #fff;
+}
+
+td {
+    color: #000;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+}
+
+tr:nth-child(odd) {
+    background-color: Moccasin;
+}
+
+
+form {
+    line-height: 1em;
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+form p {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form textarea,
+form select {
+    font-family: "Open sans", sans-serif;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 150px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: white;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 20px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"],
+form input[type="date"]:focus,
+form input[type="datetime"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="time"]:focus,
+form input[type="url"]:focus,
+form textarea:focus,
+form select:focus {
+    background: white;
+}
+
+form select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+form input[type="submit"],
+form input[type="button"],
+button,
+.button {
+    -webkit-appearance: none;
+    text-decoration: none;
+    line-height: 1em;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 8px 10px;
+    color: #fff;
+    margin: 0 auto;
+    background: #ee492e;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border: 0 none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.button.hidden {
+    pointer-events: none;
+    background: lightgrey;
+}
