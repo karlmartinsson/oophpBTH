@@ -1,6 +1,7 @@
 <?php
 
 namespace Karl\Guess;
+
 /**
  * Exception class for GuessException.
  */

@@ -4728,6 +4728,13 @@ template {
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACL5k.ttf) format('truetype');
+}
 /*
  * Make some modifications of the navbar here.
  */
@@ -5117,7 +5124,10 @@ button,
   border: 0 none;
   border-radius: 5px;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
+}
+.button:hover {
+  background: #d24d37;
 }
 .button.hidden {
   pointer-events: none;
@@ -5930,4 +5940,39 @@ h1 {
   letter-spacing: 3px;
   font-size: 2rem;
   font-family: 'Permanent Marker', cursive;
+}
+/**
+* CSS sprite for a dice with six faces.
+*/
+.dice-sprite {
+  display: inline-block;
+  padding: 0;
+  margin: 0 4px 0 0;
+  width: 32px;
+  height: 32px;
+  background: url(../img/dice-faces.jpg) no-repeat;
+}
+.dice-sprite.dice-1 {
+  background-position: -160px 0;
+}
+.dice-sprite.dice-2 {
+  background-position: -128px 0;
+}
+.dice-sprite.dice-3 {
+  background-position: -96px 0;
+}
+.dice-sprite.dice-4 {
+  background-position: -64px 0;
+}
+.dice-sprite.dice-5 {
+  background-position: -32px 0;
+}
+.dice-sprite.dice-6 {
+  background-position: 0 0;
+}
+.dice-sprite.dice- {
+  display: none;
+}
+.dicegame {
+  font-family: 'Bangers', cursive;
 }
