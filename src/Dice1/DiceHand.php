@@ -1,12 +1,15 @@
 <?php
 
-namespace Karl\Dice;
+namespace Karl\Dice1;
 
 /**
  * A dicehand, consisting of dices.
  */
-class DiceHand
+class DiceHand implements HistogramInterface
 {
+
+    use HistogramTrait;
+
     /**
      * @var Dice $dices   Array consisting of dices.
      * @var int  $values  Array consisting of last roll of the dices.

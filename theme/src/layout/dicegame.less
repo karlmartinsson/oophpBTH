@@ -1,0 +1,60 @@
+
+
+.dice-game-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.dice-game-player {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    //padding: @magicNumber;
+    background-color: white;
+    width: 49%;
+    padding: 0;
+    //padding-bottom: 32%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    
+    h2 {
+        width: 100%;
+        height: @magicNumber * 2;
+        color: white;
+        background-color: #ee492e;
+        text-align: center;
+        padding-top: @magicNumber;
+        margin: 0;
+    }
+}
+
+.histogram {
+    width: 100%;
+}
+
+.dice-game-player-content {
+    padding: @magicNumber;
+    p:last-child, .button {
+        margin-bottom: 0;
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .dice-game-player {
+        width: 100%;
+    }
+}
+
+.dice-game-dice-hand {
+    line-height: 0;
+    padding: @magicNumber / 4;
+    display: inline-block;
+    background-color: lightGray;
+    margin-right: @magicNumber / 2;
+    margin-bottom: @magicNumber / 2;
+}

@@ -73,5 +73,10 @@ return [
             "url" => "dice-game",
             "title" => "Tärningsspelet",
         ],
+        [
+            "text" => "Tärningsspelet-i-controller",
+            "url" => "dice1",
+            "title" => "Tärningsspelet",
+        ],
     ],
 ];
