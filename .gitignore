@@ -2,5 +2,7 @@
 /build
 /vendor
 /doc
+/config/database.php
+/src/Movie/Movie.php
 memory::
 composer.lock

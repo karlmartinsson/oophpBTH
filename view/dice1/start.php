@@ -15,7 +15,7 @@ namespace Anax\View;
 
 <br>
 <br>
-<form method="post" action="dice1/init">
+<form method="post" action="<?= url("dice1/init") ?>">
 
 <p>Antal tärningar (min 1, max 6)</p><br>
 <p><input type="number" name="dices" min="1" max="6"></input></p>

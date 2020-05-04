@@ -10,7 +10,8 @@
             "Karl\\": "src/"}
     },
     "require": {
-        "anax/anax-oophp-me": "^2.0.0"
+        "anax/anax-oophp-me": "^2.0.0",
+        "anax/database": "^2.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^7"

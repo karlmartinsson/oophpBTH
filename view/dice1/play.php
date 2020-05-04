@@ -33,7 +33,7 @@ if ($game->isGameWon()) {
 
 <?= $winmessage ? $winmessage : null ?>
 
-<p><a href="../dice1" class="button">Starta om</a> </p>
+<p><a href="<?= url("dice1") ?>" class="button">Starta om</a> </p>
 
 <div class="dice-game-container">
 <div class="dice-game-player">
@@ -52,7 +52,7 @@ if ($game->isGameWon()) {
     <?php endforeach; ?>
     </div>
 <?php endforeach; ?>
-<p><a href="roll" class="button">Kasta tärning(ar)</a> <a href="save" class="button">Spara poäng</a></p>
+<p><a href="<?= url("dice1/roll") ?>" class="button">Kasta tärning(ar)</a> <a href="<?= url("dice1/save") ?>" class="button">Spara poäng</a></p>
     </div>
 </div>
 
