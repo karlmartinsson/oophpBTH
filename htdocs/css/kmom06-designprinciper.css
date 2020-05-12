@@ -6042,3 +6042,14 @@ td {
 .table-right-align {
   text-align: right;
 }
+.content-cms input[type=text],
+.content-cms input[type=datetime],
+.content-cms textarea {
+  width: 400px;
+}
+.content-cms textarea {
+  height: 200px;
+}
+.flashmessage {
+  color: red;
+}

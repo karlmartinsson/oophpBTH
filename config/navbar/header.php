@@ -93,5 +93,15 @@ return [
             "url" => "movie",
             "title" => "Filmdatabasen",
         ],
+        [
+            "text" => "Textfilter-test",
+            "url" => "test-textfilter",
+            "title" => "Textfilter-test",
+        ],
+        [
+            "text" => "Content cms",
+            "url" => "content",
+            "title" => "Content cms",
+        ],
     ],
 ];

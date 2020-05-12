@@ -5,7 +5,7 @@ namespace Karl\Dice1;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Example test class.
+ * Test class for testing of DiceGame.
  */
 class Dice1GameTest extends TestCase
 {
@@ -21,21 +21,10 @@ class Dice1GameTest extends TestCase
         $diceGame->play(true);
         $this->assertTrue(count($diceGame->showPlayer()->showLastThrows()) > 0);
 
-        // $diceGame = new DiceGame();
-        // $diceGame->showPlayer()->addUnsavedPoints(100);
-        // $diceGame->showPlayer()->savePoints();
-        // $diceGame->play(true);
-        // $diceGame->play(true);
-        // $this->assertInstanceOf("\Karl\Dice1\DicePlayer", $diceGame->isGameWon());
-
         $diceGame = new DiceGame();
         $diceGame->showPlayer()->addUnsavedPoints(50);
         $diceGame->play(false);
         $this->assertEquals($diceGame->showPlayer()->showPoints(), 50);
-
-
-        // $number = $dice->roll();
-        // $this->assertTrue($number < 7 && $number > 0);
     }
 
     public function testShowOpponents()
