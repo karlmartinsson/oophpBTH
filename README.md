@@ -1,7 +1,7 @@
 Readme
 =========================
 
-Det här är ett repro för redovisningssidan i kursen objektorienterad php på Blektinge tekniska högskola.
+Det här är ett repro för redovisningssidan i kursen objektorienterad php på Blekinge tekniska högskola.
 
 I den här kursen ska vi lära oss mer om objektorienterade programmeringstekniker i programmeringsspråket PHP. 
 
